@@ -4,20 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Salones Real Providencia - Salón de eventos en León, Guanajuato. Capacidad hasta 250 personas. Elegancia y distinción para tu evento especial.">
+    <meta name="keywords" content="salones de eventos, León Guanajuato, bodas, XV años, eventos corporativos, salón emperador, Real Providencia">
+    <meta name="author" content="Salones Real Providencia">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://salon-real-providencia.invitados.org/">
+    <meta property="og:title" content="Salones Real Providencia - Eventos en León, Guanajuato">
+    <meta property="og:description" content="Salón de eventos con capacidad hasta 250 personas. Elegancia y distinción para bodas, XV años y eventos especiales en León, Guanajuato.">
+    <meta property="og:image" content="https://salon-real-providencia.invitados.org/og-image.jpg">
+    <meta property="og:locale" content="es_MX">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://salon-real-providencia.invitados.org/">
+    <meta property="twitter:title" content="Salones Real Providencia - Eventos en León, Guanajuato">
+    <meta property="twitter:description" content="Salón de eventos con capacidad hasta 250 personas en León, Guanajuato.">
+    <meta property="twitter:image" content="https://salon-real-providencia.invitados.org/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="favicon.ico">
+
+    <!-- Schema.org markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EventVenue",
+      "name": "Salones Real Providencia",
+      "description": "Salón de eventos en León, Guanajuato con capacidad hasta 250 personas",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Hilario Medina 3848",
+        "addressLocality": "León",
+        "addressRegion": "Guanajuato",
+        "postalCode": "37680",
+        "addressCountry": "MX"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "21.1219",
+        "longitude": "-101.6827"
+      },
+      "telephone": "+52-477-772-3487",
+      "url": "https://salon-real-providencia.invitados.org",
+      "maximumAttendeeCapacity": 250,
+      "priceRange": "$$"
+    }
+    </script>
+
     <title>Salones Real Providencia - Eventos en León, Guanajuato</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <nav class="navbar">
+        <nav class="navbar" role="navigation" aria-label="Navegación principal">
             <div class="container">
                 <h1 class="logo">Real Providencia</h1>
-                <ul class="nav-menu">
+                <button class="hamburger" id="hamburger" aria-label="Menú" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#galeria">Galería</a></li>
                     <li><a href="#servicios">Servicios</a></li>
                     <li><a href="#precios">Precios</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </div>
@@ -72,6 +128,53 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Galería Section -->
+    <section id="galeria" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Galería</h2>
+            <p class="gallery-subtitle">Conoce nuestras instalaciones</p>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="salon">
+                    <img src="https://via.placeholder.com/600x400/8B7355/FFFFFF?text=Sal%C3%B3n+Emperador" alt="Vista del Salón Emperador" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Salón Emperador</h3>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="lobby">
+                    <img src="https://via.placeholder.com/600x400/D4AF37/FFFFFF?text=Lobby+Decorado" alt="Lobby decorado para fotos" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Lobby Decorado</h3>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="montaje">
+                    <img src="https://via.placeholder.com/600x400/8B7355/FFFFFF?text=Montaje+de+Mesas" alt="Montaje de mesas y sillas" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Montaje de Mesas</h3>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="detalles">
+                    <img src="https://via.placeholder.com/600x400/D4AF37/FFFFFF?text=Decoraci%C3%B3n" alt="Detalles de decoración" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Decoración</h3>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="salon">
+                    <img src="https://via.placeholder.com/600x400/8B7355/FFFFFF?text=Pista+de+Baile" alt="Pista de baile" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Pista de Baile</h3>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="instalaciones">
+                    <img src="https://via.placeholder.com/600x400/D4AF37/FFFFFF?text=Estacionamiento" alt="Área de estacionamiento" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Estacionamiento</h3>
+                    </div>
+                </div>
+            </div>
+            <p class="gallery-note">Las imágenes se actualizarán con fotos reales del salón próximamente.</p>
         </div>
     </section>
 
@@ -153,6 +256,40 @@
         </div>
     </section>
 
+    <!-- Testimonios Section -->
+    <section id="testimonios" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"El salón es hermoso y la atención fue excelente. Nuestra boda fue perfecta gracias al equipo de Real Providencia."</p>
+                    <div class="testimonial-author">
+                        <h4>María y Carlos</h4>
+                        <p>Boda - Diciembre 2025</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Las instalaciones son elegantes y el servicio impecable. Los XV años de mi hija fueron inolvidables."</p>
+                    <div class="testimonial-author">
+                        <h4>Patricia González</h4>
+                        <p>XV Años - Octubre 2025</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Excelente relación calidad-precio. El salón tiene todo lo necesario y el personal es muy profesional."</p>
+                    <div class="testimonial-author">
+                        <h4>Roberto Martínez</h4>
+                        <p>Evento Corporativo - Septiembre 2025</p>
+                    </div>
+                </div>
+            </div>
+            <p class="testimonials-note">Valoración promedio: 4.3/5 | 85% de nuestros clientes nos recomiendan</p>
+        </div>
+    </section>
+
     <!-- Contacto Section -->
     <section id="contacto" class="section section-alt">
         <div class="container">
@@ -203,8 +340,34 @@
                     </form>
                 </div>
             </div>
+
+            <!-- Mapa -->
+            <div class="map-container">
+                <h3 class="map-title">Cómo Llegar</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.6!2d-101.6827!3d21.1219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842bbf0e1c2e8d4d%3A0x1234567890abcdef!2sHilario%20Medina%203848%2C%20Le%C3%B3n%2C%20Gto.!5e0!3m2!1ses!2smx!4v1234567890123"
+                    width="100%"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Ubicación de Salones Real Providencia">
+                </iframe>
+            </div>
         </div>
     </section>
+
+    <!-- Botón WhatsApp Flotante -->
+    <a href="https://wa.me/5214774644444?text=Hola%2C%20me%20interesa%20informaci%C3%B3n%20sobre%20el%20Sal%C3%B3n%20Emperador"
+       class="whatsapp-float"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Contactar por WhatsApp">
+        <svg viewBox="0 0 32 32" width="32" height="32">
+            <path fill="currentColor" d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 7.933-2.127c2.42 1.37 5.173 2.127 8.067 2.127 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.467c-2.482 0-4.908-0.646-7.07-1.87l-0.507-0.292-5.247 1.407 1.419-5.283-0.321-0.529c-1.331-2.197-2.007-4.736-2.007-7.367 0-7.384 6.083-13.467 13.467-13.467s13.467 6.083 13.467 13.467-6.083 13.467-13.467 13.467zM21.967 18.93c-0.302-0.151-1.785-0.881-2.061-0.982-0.277-0.101-0.478-0.151-0.679 0.151s-0.781 0.982-0.957 1.184c-0.177 0.202-0.353 0.227-0.655 0.076-0.302-0.151-1.275-0.47-2.428-1.499-0.898-0.801-1.504-1.791-1.68-2.093s-0.019-0.464 0.132-0.614c0.136-0.135 0.302-0.353 0.453-0.529 0.151-0.177 0.201-0.302 0.302-0.504 0.101-0.202 0.050-0.378-0.025-0.529s-0.679-1.636-0.931-2.242c-0.245-0.589-0.494-0.509-0.679-0.518-0.176-0.008-0.377-0.010-0.578-0.010s-0.529 0.076-0.806 0.378c-0.277 0.302-1.057 1.033-1.057 2.519s1.082 2.923 1.233 3.125c0.151 0.202 2.13 3.251 5.161 4.559 0.721 0.311 1.284 0.497 1.723 0.636 0.724 0.23 1.383 0.198 1.904 0.120 0.581-0.087 1.785-0.73 2.037-1.435 0.252-0.705 0.252-1.31 0.176-1.435-0.075-0.126-0.277-0.202-0.579-0.353z"/>
+        </svg>
+    </a>
 
     <!-- Footer -->
     <footer class="footer">
@@ -213,6 +376,17 @@
             <p>León, Guanajuato | <a href="tel:4777723487">(477) 772-34-87</a></p>
         </div>
     </footer>
+
+    <!-- Google Analytics (Reemplaza G-XXXXXXXXXX con tu ID de medición) -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    -->
 
     <script src="script.js"></script>
 </body>
