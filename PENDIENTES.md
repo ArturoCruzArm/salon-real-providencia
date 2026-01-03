@@ -58,10 +58,14 @@ La galería actualmente usa placeholders. Necesitas:
 - Peso: Máximo 500KB por imagen (optimizar)
 
 **Cómo reemplazar:**
-1. Sube las imágenes a la carpeta del proyecto
-2. Edita `index.html` líneas 141-175
-3. Cambia las URLs de `https://via.placeholder.com/...` por las rutas de tus imágenes
-4. Ejemplo: `<img src="imagenes/salon-emperador.jpg" alt="...">`
+1. Crea una carpeta `imagenes` en el proyecto
+2. Sube las imágenes a esa carpeta
+3. Edita `index.html` líneas 140-200
+4. Reemplaza los `<svg>` por `<img>`:
+   ```html
+   <img src="imagenes/salon-emperador.jpg" alt="Vista del Salón Emperador" loading="lazy">
+   ```
+5. Mantén la estructura `<div class="gallery-item">` y `<div class="gallery-overlay">`
 
 ---
 
