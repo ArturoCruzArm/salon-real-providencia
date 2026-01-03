@@ -21,6 +21,26 @@ El sitio web ya cuenta con todas las funcionalidades esenciales:
 
 ## 📝 TAREAS PENDIENTES
 
+### 0. Crear favicon.ico (COSMÉTICO - OPCIONAL)
+**Estado**: ⏳ Pendiente
+**Prioridad**: 🟢 Muy Baja (solo elimina advertencia en consola)
+
+**Error actual**: `GET /favicon.ico 404 (Not Found)`
+- **No afecta funcionalidad** - Solo aparece en consola de desarrollador
+- El sitio ya tiene `favicon.svg` que funciona en navegadores modernos
+- Este archivo es solo para navegadores muy antiguos
+
+**Solución rápida**:
+1. Ve a https://convertio.co/svg-ico/
+2. Sube `favicon.svg` del proyecto
+3. Descarga el `favicon.ico` generado
+4. Agrégalo a la raíz del proyecto
+5. Commit y push
+
+**Instrucciones**: Ver archivo `COMO_CREAR_FAVICON_ICO.md`
+
+---
+
 ### 1. Configurar DNS (CRÍTICO)
 **Estado**: ⏳ Pendiente
 **Prioridad**: 🔴 Alta
